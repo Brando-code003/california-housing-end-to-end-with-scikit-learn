@@ -24,8 +24,6 @@ def load_housing():
         return pd.read_csv(member)
 
 # Step 2 - income_categories
-import pandas as pd
-import numpy as np
 def income_categories(df):
     df = pd.DataFrame(df)
     # TODO: pd.cut median_income with edges [0, 1.5, 3, 4.5, 6, inf] and labels 1..5; return an int Series.
